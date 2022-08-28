@@ -1,0 +1,83 @@
+@import './color.scss';
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: $bg--dark;
+        color: $text-color--dark;
+    }
+    .main{ 
+        background-color: $bg-calc--dark; 
+        .result-container{
+             #calc{
+                 color: $bg-calc-color--dark;
+            } 
+        }
+        .key-container{
+            background-color: $bg-key-container--dark;
+            .key{
+                &.lighten{
+                    color: $key-color--dark;
+                    &:hover{
+                        color: $key-color--dark-hover;
+                    }
+                }
+                &:hover{
+                    background-color: $key--hover-bcg-dark;
+                    box-shadow: 0 0 0 5px $key--hover-boxShadow-dark;
+                    color: $key--hover-color--dark;
+                }
+                &#division, &#multiply, &#sub, &#sum{
+                    transition: border ease .41s;
+                    -webkit-transition: border ease .41s;
+                    -moz-transition: border ease .41s;
+                    -ms-transition: border ease .41s;
+                    -o-transition: border ease .41s;
+                    &:hover{
+                       border: 1px solid $operational-btn-hover-border-color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: $bg--light; 
+        color: $text-color--light;
+    }
+    .main{  
+        background-color: $bg-calc--light ; 
+        .result-container{
+            #calc{
+                color: $bg-calc-color--light;
+            } 
+        }
+        .key-container{
+            background-color: $bg-key-container--light; 
+            .key{
+                &.lighten{
+                    color: $key-color--light;
+                    &:hover{
+                        color: $key-color--light-hover;
+                    }
+                }
+                &:hover{
+                    background-color: $key--hover-bcg-light;
+                    box-shadow: 0 0 0 5px $key--hover-boxShadow-light;
+                    color:$key--hover-color--light
+                }
+                &#division, &#multiply, &#sub, &#sum{
+                    transition: all ease .1s;
+                    -webkit-transition: all ease .1s;
+                    -moz-transition: all ease .1s;
+                    -ms-transition: all ease .1s;
+                    -o-transition: all ease .1s;
+                    &:hover{
+                        background-color: $operational-btn-hover-bcg--light;
+                        color: $operational-btn-hover-color--light;
+                    }
+                }
+            }
+        }
+    }
+}

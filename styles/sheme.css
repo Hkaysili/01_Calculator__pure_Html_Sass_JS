@@ -1,0 +1,77 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f0f0f;
+    color: #c2c2c2;
+  }
+  .main {
+    background-color: #151515;
+  }
+  .main .result-container #calc {
+    color: #ffffff5e;
+  }
+  .main .key-container {
+    background-color: #1a1a1a;
+  }
+  .main .key-container .key.lighten {
+    color: #ffffff5e;
+  }
+  .main .key-container .key.lighten:hover {
+    color: #fffffffe;
+  }
+  .main .key-container .key:hover {
+    background-color: #2f2f2f;
+    -webkit-box-shadow: 0 0 0 5px #4d4d4d2d;
+            box-shadow: 0 0 0 5px #4d4d4d2d;
+    color: #fff;
+  }
+  .main .key-container .key#division, .main .key-container .key#multiply, .main .key-container .key#sub, .main .key-container .key#sum {
+    transition: border ease .41s;
+    -webkit-transition: border ease .41s;
+    -moz-transition: border ease .41s;
+    -ms-transition: border ease .41s;
+    -o-transition: border ease .41s;
+  }
+  .main .key-container .key#division:hover, .main .key-container .key#multiply:hover, .main .key-container .key#sub:hover, .main .key-container .key#sum:hover {
+    border: 1px solid #ff3e39;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ebebeb;
+    color: #1a1a1a;
+  }
+  .main {
+    background-color: #fafafa;
+  }
+  .main .result-container #calc {
+    color: #2f2f2f98;
+  }
+  .main .key-container {
+    background-color: #ffffff;
+  }
+  .main .key-container .key.lighten {
+    color: #2f2f2f80;
+  }
+  .main .key-container .key.lighten:hover {
+    color: #fffffffe;
+  }
+  .main .key-container .key:hover {
+    background-color: #2f2f2f;
+    -webkit-box-shadow: 0 0 0 5px #4d4d4d2d;
+            box-shadow: 0 0 0 5px #4d4d4d2d;
+    color: #fff;
+  }
+  .main .key-container .key#division, .main .key-container .key#multiply, .main .key-container .key#sub, .main .key-container .key#sum {
+    transition: all ease .1s;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    -ms-transition: all ease .1s;
+    -o-transition: all ease .1s;
+  }
+  .main .key-container .key#division:hover, .main .key-container .key#multiply:hover, .main .key-container .key#sub:hover, .main .key-container .key#sum:hover {
+    background-color: #ef5e59;
+    color: #faf6f6 !important;
+  }
+}
+/*# sourceMappingURL=sheme.css.map */

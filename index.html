@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <script src="https://kit.fontawesome.com/8686a1dd71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="main">
+        <span class="appTitle">Calc<span>.</span></span>
+        <div class="result-container">
+            <div id="calc">0</div>
+            <div id="result">0</div>
+        </div>
+        <div class="key-container">
+            <div class="row">
+                <div class="key lighten" id="clearAll">C</div>
+                <div class="key lighten" id="backSpace"><i class="fa-solid fa-delete-left"></i></div>
+                <div class="key lighten">%</div>
+                <div class="key operatorKey" id="division">/</div>
+            </div> 
+            <div class="row"> 
+                <div class="key numberKey">7</div>
+                <div class="key numberKey">8</div>
+                <div class="key numberKey">9</div>
+                <div class="key operatorKey" id="multiply">*</div>
+            </div>
+            <div class="row">
+                <div class="key numberKey">4</div>
+                <div class="key numberKey">5</div>
+                <div class="key numberKey">6</div>
+                <div class="key operatorKey" id="sum">+</div>
+            </div>
+            <div class="row">
+                <div class="key numberKey">1</div>
+                <div class="key numberKey">2</div>
+                <div class="key numberKey">3</div>
+                <div class="key operatorKey" id="sub">-</div>
+            </div>
+            <div class="row">
+                <div class="key lighten numberKey">00</div>
+                <div class="key numberKey">0</div>
+                <div class="key lighten numberKey">.</div>
+                <div class="key" id="equal">=</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"/>
+</body>
+</html>
